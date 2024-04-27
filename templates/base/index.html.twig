@@ -5,120 +5,93 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}" type="image/x-icon">
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
-    <!--=============== REMIXICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <title>Hello, world!</title>
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Our Gross</title>
   </head>
   <body>
-    <div class="sidebar">
-      <div class="sidebar-header">
-        <h3 class="brand">
-          <span>
-            <i class="ri-shopping-cart-line"></i>
-          </span>
-          <span>OurGross</span>
-        </h3>
-        <span>
-          <i class="ri-menu-line"></i>
-        </span>
-      </div>
-      <div class="sidebar-menu">
-        <ul>
-          <li>
-            <a href="">
-              <span>
-                <i class="ri-home-line"></i>
-              </span>
-              <span>Ana Sayfa</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span>
-                <i class="ri-product-hunt-line"></i>
-              </span>
-              <span>Products</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span>
-                <i class="ri-bank-card-line"></i>
-              </span>
-              <span>Purchase</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span>
-                <i class="ri-archive-line"></i>
-              </span>
-              <span>Stock</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span>
-                <i class="ri-team-line"></i>
-              </span>
-              <span>Workers</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span>
-                <i class="ri-settings-2-line"></i>
-              </span>
-              <span>Settıngs</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    
+    <!--SIDEBAR-->
+    <section id="sidebar">
+      <a href="#" class="brand"><i class='bx bx-cart icon'></i> OurGross</a>
+      <ul class="side-menu">
+        <li><a href="#" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard </a></li>
+        <li class="divider">Manage Product</li>
+        <li>
+          <a href="#"><i class='bx bxl-product-hunt icon'></i> Products <i class='bx bx-chevron-right icon-right' ></i></a>
+          <ul class="side-dropdown">
+            <li>
+              <a href="#">Product List</a>
+              <a href="#">Add Product</a>
+              <a href="#">Category List</a>
+              <a href="#">Add Category</a>
+            </li>
+          </ul>
+        </li>
+        <li class="divider">Manage Purchase</li>
+        <li>
+          <a href="#"><i class='bx bx-wallet icon'></i> Purchase <i class='bx bx-chevron-right icon-right' ></i></a>
+          <ul class="side-dropdown">
+            <li>
+              <a href="#">Purchase List</a>
+              <a href="#">Add Purchase</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#"><i class='bx bx-transfer icon'></i> Purchase Return </a></li>
+        <li class="divider">Manage Stcok</li>
+        <li><a href="#"><i class='bx bxs-truck icon'></i> Stock Transactions </a></li>
+        <li><a href="#"><i class='bx bxs-package icon'></i> Stock Adjusment </a></li>
+        <li class="divider">Manage Worker</li>
+        <li>
+          <a href="#"><i class='bx bx-group icon'></i> Workers <i class='bx bx-chevron-right icon-right' ></i></a>
+          <ul class="side-dropdown">
+            <li>
+              <a href="#">Worker List</a>
+              <a href="#">Add Worker</a>
+            </li>
+          </ul>
+        </li>
+        <li class="divider">Manage Settings</li>
+        <li>
+          <a href="#"><i class='bx bx-cog icon'></i> Settings <i class='bx bx-chevron-right icon-right' ></i></a>
+          <ul class="side-dropdown">
+            <li>
+              <a href="#">Company Details</a>
+              <a href="#">Generel Setting</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      
+    </section>
+    <!--SIDEBAR-->
 
-    <div class="main-content">
-      <header>
-        <div class="social-icons">
-          <div>
-            <span>
-              <i class="ri-user-fill"></i>
-            </span>
-          </div>
+    <!--NAVBAR-->
+    <section id="content">
+      <nav>
+        <i class='bx bx-menu toogle-sidebar' ></i>
+        <div class="date">27/04/2024</div>
+        <span class = "divider"></span>
+        <div class="profile">
+          <img src="{{ asset('assets/img/person.jpg') }}" alt="">
+          <ul class="profile-link">
+            <li><a href="#"><i class='bx bx-log-out-circle icon' ></i>Logout</a></li>
+          </ul>
         </div>
-      </header>
+      </nav>
+    </section>
+    <!--NAVBAR-->
 
-      <main>
-        <h2 class= "dash-title">Genel Bakış</h2>
 
-        <div class="dash-cards">
-          <div class="card-single">
-            <div class="card-body">
-              <span>
-                <i class="ri-group-line"></i>
-              </span>
-              <div>
-                <h5>Toplam Çalışan</h5>
-                <h4>15</h4>
-              </div>
-            </div>
-          </div>
 
-          <div class="card-single">
-            <div class="card-body">
-              <span>
-                <i class="ri-barcode-box-line"></i>
-              </span>
-              <div>
-                <h5>Toplam Ürün</h5>
-                <h4>850</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </div>
+    <!--=============== JSS ===============-->
+    <script src="{{ asset('assets/js/main.js') }}"></script>
   </body>
 </html>
