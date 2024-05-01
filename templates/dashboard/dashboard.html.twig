@@ -1,0 +1,128 @@
+{% extends "base/index.html.twig" %}
+
+
+{% block content %}
+    <h1 class="title">Dashboard</h1>
+
+    <div class="info-data">
+        <div class="card">
+            <div class="head">
+                <div>
+                    <h2>1500</h2>
+                    <p>Total Product</p>
+                    </div>
+                <i class='bx bxl-product-hunt icon product'></i>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="head">
+                <div>
+                    <h2>25</h2>
+                    <p>Total Worker</p>
+                    </div>
+                <i class='bx bx-user icon user' ></i>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="head">
+                    <div>
+                        <h2>1500</h2>
+                        <p>Total Category</p>
+                    </div>
+                <i class='bx bx-category icon category' ></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 id = "table-head">Most Sales Product</h2>
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Image</td>
+                    <td>Product Name</td>
+                    <td>SKU</td>
+                    <td>Category</td>
+                    <td>Unit</td>
+                    <td>Price</td>
+                    <td>Expiry Date</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <img src="{{ asset('assets/img/orange.jpg') }}" alt="">
+                    </td>
+                    <td>Orange</td>
+                    <td>123</td>
+                    <td>fruit</td>
+                    <td>kg</td>
+                    <td>9.99</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <img src="{{ asset('assets/img/banana.jpg') }}" alt="">
+                    </td>
+                    <td>Banana</td>
+                    <td>456</td>
+                    <td>fruit</td>
+                    <td>kg</td>
+                    <td>10.99</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="board">
+        <h2 id = "table-head">Last Purchase</h2>
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Image</td>
+                    <td>Product Name</td>
+                    <td>SKU</td>
+                    <td>Category</td>
+                    <td>Unit</td>
+                    <td>Price</td>
+                    <td>Expiry Date</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <img src="{{ asset('assets/img/orange.jpg') }}" alt="">
+                    </td>
+                    <td>Orange</td>
+                    <td>123</td>
+                    <td>fruit</td>
+                    <td>kg</td>
+                    <td>9.99</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <img src="{{ asset('assets/img/banana.jpg') }}" alt="">
+                    </td>
+                    <td>Banana</td>
+                    <td>456</td>
+                    <td>fruit</td>
+                    <td>kg</td>
+                    <td>10.99</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+{% endblock %}
