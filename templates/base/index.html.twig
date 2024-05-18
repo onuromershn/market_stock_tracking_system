@@ -8,9 +8,15 @@
     <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}" type="image/x-icon">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+
+     <!-- Datateble CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/datatables.min.css') }}">
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-
+    
     <!--=============== BOXICONS ===============-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Our Gross</title>
@@ -21,13 +27,13 @@
     <section id="sidebar">
       <a href="#" class="brand"><i class='bx bx-cart icon'></i> OurGross</a>
       <ul class="side-menu">
-        <li><a href="#" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard </a></li>
+        <li><a href="{{ path('app_dashboard') }}" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard </a></li>
         <li class="divider">Manage Product</li>
         <li>
           <a href="#"><i class='bx bxl-product-hunt icon'></i> Products <i class='bx bx-chevron-right icon-right' ></i></a>
           <ul class="side-dropdown">
             <li>
-              <a href="#">Product List</a>
+              <a href="{{ path('app_products') }}">Product List</a>
               <a href="#">Add Product</a>
               <a href="#">Category List</a>
               <a href="#">Add Category</a>
@@ -98,8 +104,18 @@
 
     </section>
 
+    <!--=============== BOOTSTRAP JS ===============-->
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 
-    <!--=============== JSS ===============-->
+    <!--=============== JQUERY JS ===============-->
+    <script src="{{ asset('assets/js/jquery-3.7.1.js') }}"></script>
+
+    <!--=============== DATATABLE JS ===============-->
+    <script src="{{ asset('assets/js/datatables.min.js') }}"></script>
+    <script src="{{ asset('assets/js/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vfs_fonts.js') }}"></script>
+
+    <!--=============== CUSTOM JS ===============-->
     <script src="{{ asset('assets/js/main.js') }}"></script>
   </body>
 </html>
