@@ -15,4 +15,12 @@ class ProductController extends AbstractController
             'controller_name' => 'ProductController',
         ]);
     }
+
+    #[Route('/add_product', name: 'app_add_product')]
+    public function add(): Response
+    {
+        return $this->render('product/add.html.twig', [
+            'controller_name' => 'ProductController',
+        ]);
+    }
 }
