@@ -1,0 +1,63 @@
+{% extends "base/index.html.twig" %}
+
+
+{% block content %}
+    <h1 class="title">Add Purchase</h1>
+    <hr/>
+
+    
+
+    <!-- =======  Product Add Form Start  ========================== -->
+    <div class="container add-product-form">
+        <div class="row">
+            <div class="col-12">
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <label for="inputSuppliertName" class="add-form-label">Supplier Name</label>
+                        <input type="text" class="form-control" id="inputSuppliertName" placeholder="Enter Supplier Name">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputPurchaseDate" class="add-form-label">Purchase Date</label>
+                        <input type="date" class="form-control" id="inputPurchaseDate">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputProductStatus" class="add-form-label">Product Status</label>
+                        <div class="radio-buttons-container">
+                            <div class="radio-button">
+                            <input name="radio-group" id="radio2" class="radio-button__input" type="radio" value="paid" checked>
+                            <label for="radio2" class="radio-button__label">
+                                <span class="radio-button__custom"></span>Paid
+                            </label>
+                            </div>
+                            <div class="radio-button">
+                            <input name="radio-group" id="radio1" class="radio-button__input" type="radio" value="due">
+                            <label for="radio1" class="radio-button__label">
+                                <span class="radio-button__custom"></span>Due
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="inputProductName" class="add-form-label">Product Name</label>
+                        <select id="inputProductName" class="form-select" required>
+                        <option value="" disabled selected hidden>Select Product</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class= "container mt-3">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="submit" class="cancelButton btn">Cancel</button>
+            <button type="submit" class="saveButton btn  ms-3">Save</button>
+        </div>
+    </div>
+    
+    <!-- =======  Product Add Form End  ===================== -->
+    
+
+{% endblock %}

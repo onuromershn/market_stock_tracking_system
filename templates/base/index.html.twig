@@ -45,15 +45,14 @@
           <a href="#"><i class='bx bx-wallet icon'></i> Purchase <i class='bx bx-chevron-right icon-right' ></i></a>
           <ul class="side-dropdown">
             <li>
-              <a href="#">Purchase List</a>
-              <a href="#">Add Purchase</a>
+              <a href="{{ path('app_purchase') }}">Purchase List</a>
+              <a href="{{ path('app_add_purchase') }}">Add Purchase</a>
             </li>
           </ul>
         </li>
-        <li><a href="#"><i class='bx bx-transfer icon'></i> Purchase Return </a></li>
+        <li><a href="{{ path('app_purchase_return') }}"><i class='bx bx-transfer icon'></i> Purchase Return </a></li>
         <li class="divider">Manage Stcok</li>
         <li><a href="#"><i class='bx bxs-truck icon'></i> Stock Transactions </a></li>
-        <li><a href="#"><i class='bx bxs-package icon'></i> Stock Adjusment </a></li>
         <li class="divider">Manage Worker</li>
         <li>
           <a href="#"><i class='bx bx-group icon'></i> Workers <i class='bx bx-chevron-right icon-right' ></i></a>

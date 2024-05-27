@@ -1,0 +1,124 @@
+{% extends "base/index.html.twig" %}
+
+
+{% block content %}
+    <h1 class="title">All Purchase</h1>
+    <hr/>
+
+    <button onclick="window.location.href='{{ path('app_add_purchase') }}';" class="add-product-button">
+        Add Purchase<i class='bx bx-plus-medical'></i>
+    </button>
+
+    <!-- =======  Data-Table  = Start  ========================== -->
+    <div class="container-fluid product-table">
+        <div class="row">
+            <div class="col-12">
+                <div class="data_table">
+                    <table id="example" class="table table-striped table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>Purchase Date</th>
+                                <th>Supplier </th>
+                                <th>Payment</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="actionbutton">
+                                            <span class="actionText">Edit</span>
+                                            <span class="actionIcon">
+                                                <i class='bx bx-edit'></i>
+                                            </span>
+                                        </button>
+                                        <button class="actionbutton">
+                                            <span class="actionText">Trash</span>
+                                            <span class="actionIcon">
+                                                <i class='bx bx-trash'></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="actionbutton">
+                                            <span class="actionText">Edit</span>
+                                            <span class="actionIcon">
+                                                <i class='bx bx-edit'></i>
+                                            </span>
+                                        </button>
+                                        <button class="actionbutton">
+                                            <span class="actionText">Trash</span>
+                                            <span class="actionIcon">
+                                                <i class='bx bx-trash'></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="actionbutton">
+                                            <span class="actionText">Edit</span>
+                                            <span class="actionIcon">
+                                                <i class='bx bx-edit'></i>
+                                            </span>
+                                        </button>
+                                        <button class="actionbutton">
+                                            <span class="actionText">Trash</span>
+                                            <span class="actionIcon">
+                                                <i class='bx bx-trash'></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Senior Javascript Developer</td>
+                                <td>Edinburgh</td>
+                                <td>22</td>
+                                <td>
+                                    <div class="actions">
+                                        <button class="actionbutton">
+                                            <span class="actionText">Edit</span>
+                                            <span class="actionIcon">
+                                                <i class='bx bx-edit'></i>
+                                            </span>
+                                        </button>
+                                        <button class="actionbutton">
+                                            <span class="actionText">Trash</span>
+                                            <span class="actionIcon">
+                                                <i class='bx bx-trash'></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =======  Data-Table  = End  ===================== -->
+    
+
+{% endblock %}
